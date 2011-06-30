@@ -1,6 +1,7 @@
 A quick and nasty library I whipped up that converts most of popular online naming silliness into something that minimises the chances of identity confusion.
 
-e.g. People can go nuts with 1334 style characters or deliberate attempts to look like someone else's handle and it should hopefully get detected:
 
-"|-|3110 |/\|O|?1|)" gets translated to "helloworld"
+This means people can go nuts with 1334 style characters or deliberate attempts to look like someone else's handle and it should hopefully get detected:
+
+"HelloWorld", "hEllo      wor1d" and "|-|3110 |/\|O|?1|)" all get translated to "helloworld"
 
