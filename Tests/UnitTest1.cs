@@ -14,7 +14,7 @@ namespace Tests
         public void TestMethod1()
         {
             var cleaner = new Cleaner();
-            var result = cleaner.Simplify(@"7|-|3 |=|31 15 93771|\|9 (|053 70 7|-|15 31337 0p3|24710|\|!");
+            var result = cleaner.Simplify(@"|-|3110 |/\|O|?1|)");
         }
     }
 }
