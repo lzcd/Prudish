@@ -34,6 +34,8 @@ namespace Prudish
         {
             var cleanText = new StringBuilder();
 
+            var lastChar = default(char);
+
             foreach (var c in originalText)
             {
                 switch (c)
@@ -74,9 +76,13 @@ namespace Prudish
                     case '8':
                     case '9':
                     case '0':
-                        cleanText.Append(c);
+                        if (c != lastChar)
+                        {
+                            cleanText.Append(c);
+                        }
                         break;
                 }
+                lastChar = c;
             }
             return cleanText.ToString();
         }

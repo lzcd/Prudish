@@ -15,6 +15,7 @@ namespace Tests
         {
             var cleaner = new Cleaner();
             var result = cleaner.Simplify(@"|-|3110 |/\|O|?1|)");
+            Assert.AreEqual("heloworld", result);
         }
     }
 }
